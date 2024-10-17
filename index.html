@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvoCard Emporium</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//001.png"
+          alt="EvoCard Emporium Logo"
+          style="width: 100px; height: auto"
+        />
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="video-header">
+        <iframe
+          src="https://www.youtube.com/embed/EJcWaAnsvlg"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <h1>EvoCard Emporium</h1>
+      </div>
+      <div class="product-list">
+        <div class="product" data-name="Shrouded Fable ETB" data-price="39.99">
+          <img
+            src="https://www.stompinggroundstcg.com/cdn/shop/files/Shrouded_Fable_Elite_Trainer_Box.webp?v=1717447609"
+            alt="Shrouded Fable ETB"
+          />
+          <h2>Shrouded Fable ETB</h2>
+          <p>Price: $39.99</p>
+          <button onclick="addToCart('Shrouded Fable ETB', 39.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="product"
+          data-name="Shrouded Fable Booster Bundle"
+          data-price="14.99"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoEEdQRY7PvCeIvrKMFL0qrYPus-OAMu0jw&s"
+            alt="Shrouded Fable Booster Bundle"
+          />
+          <h2>Shrouded Fable Booster Bundle</h2>
+          <p>Price: $14.99</p>
+          <button onclick="addToCart('Shrouded Fable Booster Bundle', 14.99)">
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="product"
+          data-name="Shrouded Fable Single Packs"
+          data-price="19.99"
+        >
+          <img
+            src="https://realgoodeal.com/cdn/shop/files/PACK1_35d84abb-6275-4462-ad1d-fd5b65967501.png?v=1717176753"
+            alt="Shrouded Fable Single Packs"
+          />
+          <h2>Shrouded Fable Single Packs</h2>
+          <p>Price: $19.99</p>
+          <button onclick="addToCart('Shrouded Fable Single Packs', 19.99)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 EvoCard Emporium</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
